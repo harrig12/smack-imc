@@ -1,1 +1,1 @@
-from register import make_gray
+from register import *
