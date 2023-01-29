@@ -1,7 +1,7 @@
 
 <!DOCTYPE html>
 
-<html lang="EN">
+<html lang="en">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
@@ -37,126 +37,11 @@
 <section id="submodules">
 <h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this heading">¶</a></h2>
 </section>
-<section id="module-smack_imc.register">
-<span id="smack-imc-register-module"></span><h2>smack_imc.register module<a class="headerlink" href="#module-smack_imc.register" title="Permalink to this heading">¶</a></h2>
-<dl class="py function">
-<dt class="sig sig-object py" id="smack_imc.register.approx_scale">
-<span class="sig-prename descclassname"><span class="pre">smack_imc.register.</span></span><span class="sig-name descname"><span class="pre">approx_scale</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">image</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">template</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">image_downscale_axis</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#smack_imc.register.approx_scale" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py function">
-<dt class="sig sig-object py" id="smack_imc.register.make_gray">
-<span class="sig-prename descclassname"><span class="pre">smack_imc.register.</span></span><span class="sig-name descname"><span class="pre">make_gray</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">image</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#smack_imc.register.make_gray" title="Permalink to this definition">¶</a></dt>
-<dd><p>_summary_</p>
-<dl class="simple">
-<dt>Args:</dt><dd><p>(numpy array): The image channel to convert to grayscale.</p>
-</dd>
-<dt>Returns:</dt><dd><p>(numpy array): The grayscale version of the input image.</p>
-</dd>
-</dl>
-</dd></dl>
-
-<dl class="py function">
-<dt class="sig sig-object py" id="smack_imc.register.plot_registration">
-<span class="sig-prename descclassname"><span class="pre">smack_imc.register.</span></span><span class="sig-name descname"><span class="pre">plot_registration</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">registered_image</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">template</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cmap1</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">5</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cmap2</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#smack_imc.register.plot_registration" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py function">
-<dt class="sig sig-object py" id="smack_imc.register.preprocess_IF_nuclear">
-<span class="sig-prename descclassname"><span class="pre">smack_imc.register.</span></span><span class="sig-name descname"><span class="pre">preprocess_IF_nuclear</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">image</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">binarization_threshold</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sigma</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#smack_imc.register.preprocess_IF_nuclear" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py function">
-<dt class="sig sig-object py" id="smack_imc.register.preprocess_IMC_nuclear">
-<span class="sig-prename descclassname"><span class="pre">smack_imc.register.</span></span><span class="sig-name descname"><span class="pre">preprocess_IMC_nuclear</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">image</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">channel_axis</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">2</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">arcsinh_normalize</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">arcsinh_cofactor</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">5</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">winsorize_limits</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">[None,</span> <span class="pre">0.2]</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">binarization_threshold</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">2</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sigma</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#smack_imc.register.preprocess_IMC_nuclear" title="Permalink to this definition">¶</a></dt>
-<dd><p>_summary_</p>
-<dl class="simple">
-<dt>Args:</dt><dd><p>image (_type_): _description_
-channel_axis (int, optional): _description_. Defaults to 2.
-arcsinh_normalize (bool, optional): _description_. Defaults to True.
-arcsinh_cofactor (int, optional): _description_. Defaults to 5.
-winsorize_limits (list, optional): _description_. Defaults to [None,0.2].
-binarization_threshold (int, optional): _description_. Defaults to 2.
-sigma (int, optional): _description_. Defaults to 1.</p>
-</dd>
-<dt>Returns:</dt><dd><p>_type_: _description_</p>
-</dd>
-</dl>
-</dd></dl>
-
-<dl class="py function">
-<dt class="sig sig-object py" id="smack_imc.register.preprocess_mask_nuclear">
-<span class="sig-prename descclassname"><span class="pre">smack_imc.register.</span></span><span class="sig-name descname"><span class="pre">preprocess_mask_nuclear</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">image</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sigma</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#smack_imc.register.preprocess_mask_nuclear" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py function">
-<dt class="sig sig-object py" id="smack_imc.register.register">
-<span class="sig-prename descclassname"><span class="pre">smack_imc.register.</span></span><span class="sig-name descname"><span class="pre">register</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">image</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">template</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">max_features</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">keep_percent</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#smack_imc.register.register" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py function">
-<dt class="sig sig-object py" id="smack_imc.register.score_registration">
-<span class="sig-prename descclassname"><span class="pre">smack_imc.register.</span></span><span class="sig-name descname"><span class="pre">score_registration</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">image</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">template</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">transformation_matrix</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#smack_imc.register.score_registration" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
+<section id="smack-imc-register-module">
+<h2>smack_imc.register module<a class="headerlink" href="#smack-imc-register-module" title="Permalink to this heading">¶</a></h2>
 </section>
-<section id="module-smack_imc">
-<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-smack_imc" title="Permalink to this heading">¶</a></h2>
-<dl class="py function">
-<dt class="sig sig-object py" id="smack_imc.approx_scale">
-<span class="sig-prename descclassname"><span class="pre">smack_imc.</span></span><span class="sig-name descname"><span class="pre">approx_scale</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">image</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">template</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">image_downscale_axis</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#smack_imc.approx_scale" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py function">
-<dt class="sig sig-object py" id="smack_imc.make_gray">
-<span class="sig-prename descclassname"><span class="pre">smack_imc.</span></span><span class="sig-name descname"><span class="pre">make_gray</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">image</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#smack_imc.make_gray" title="Permalink to this definition">¶</a></dt>
-<dd><p>Make an image grayscale</p>
-<dl class="simple">
-<dt>Args:</dt><dd><p>(numpy array): The image channel to convert to grayscale.</p>
-</dd>
-<dt>Returns:</dt><dd><p>(numpy array): The grayscale version of the input image.</p>
-</dd>
-</dl>
-</dd></dl>
-
-<dl class="py function">
-<dt class="sig sig-object py" id="smack_imc.plot_registration">
-<span class="sig-prename descclassname"><span class="pre">smack_imc.</span></span><span class="sig-name descname"><span class="pre">plot_registration</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">registered_image</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">template</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cmap1</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">5</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cmap2</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#smack_imc.plot_registration" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py function">
-<dt class="sig sig-object py" id="smack_imc.preprocess_IF_nuclear">
-<span class="sig-prename descclassname"><span class="pre">smack_imc.</span></span><span class="sig-name descname"><span class="pre">preprocess_IF_nuclear</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">image</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">binarization_threshold</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sigma</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#smack_imc.preprocess_IF_nuclear" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py function">
-<dt class="sig sig-object py" id="smack_imc.preprocess_IMC_nuclear">
-<span class="sig-prename descclassname"><span class="pre">smack_imc.</span></span><span class="sig-name descname"><span class="pre">preprocess_IMC_nuclear</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">image</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">channel_axis</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">2</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">arcsinh_normalize</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">arcsinh_cofactor</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">5</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">winsorize_limits</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">[None,</span> <span class="pre">0.2]</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">binarization_threshold</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">2</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sigma</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#smack_imc.preprocess_IMC_nuclear" title="Permalink to this definition">¶</a></dt>
-<dd><p>_summary_</p>
-<dl class="simple">
-<dt>Args:</dt><dd><p>image (_type_): _description_
-channel_axis (int, optional): _description_. Defaults to 2.
-arcsinh_normalize (bool, optional): _description_. Defaults to True.
-arcsinh_cofactor (int, optional): _description_. Defaults to 5.
-winsorize_limits (list, optional): _description_. Defaults to [None,0.2].
-binarization_threshold (int, optional): _description_. Defaults to 2.
-sigma (int, optional): _description_. Defaults to 1.</p>
-</dd>
-<dt>Returns:</dt><dd><p>_type_: _description_</p>
-</dd>
-</dl>
-</dd></dl>
-
-<dl class="py function">
-<dt class="sig sig-object py" id="smack_imc.preprocess_mask_nuclear">
-<span class="sig-prename descclassname"><span class="pre">smack_imc.</span></span><span class="sig-name descname"><span class="pre">preprocess_mask_nuclear</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">image</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sigma</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#smack_imc.preprocess_mask_nuclear" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py function">
-<dt class="sig sig-object py" id="smack_imc.score_registration">
-<span class="sig-prename descclassname"><span class="pre">smack_imc.</span></span><span class="sig-name descname"><span class="pre">score_registration</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">image</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">template</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">transformation_matrix</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#smack_imc.score_registration" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
+<section id="module-contents">
+<h2>Module contents<a class="headerlink" href="#module-contents" title="Permalink to this heading">¶</a></h2>
 </section>
 </section>
 
@@ -167,7 +52,7 @@ sigma (int, optional): _description_. Defaults to 1.</p>
       </div>
       <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
         <div class="sphinxsidebarwrapper">
-<h1 class="logo"><a href="index.rst.html">smack-imc</a></h1>
+<h1 class="logo"><a href="index.html">smack-imc</a></h1>
 
 
 
@@ -184,8 +69,8 @@ sigma (int, optional): _description_. Defaults to 1.</p>
 <li class="toctree-l1"><a class="reference internal" href="parameter_sweep.html">Sweeping hyperparameters</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">smack_imc package</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#submodules">Submodules</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#module-smack_imc.register">smack_imc.register module</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#module-smack_imc">Module contents</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#smack-imc-register-module">smack_imc.register module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#module-contents">Module contents</a></li>
 </ul>
 </li>
 <li class="toctree-l1 current"><a class="reference internal" href="modules.html">smack_imc</a><ul class="current">
@@ -197,7 +82,7 @@ sigma (int, optional): _description_. Defaults to 1.</p>
 <div class="relations">
 <h3>Related Topics</h3>
 <ul>
-  <li><a href="index.rst.html">Documentation overview</a><ul>
+  <li><a href="index.html">Documentation overview</a><ul>
       <li>Previous: <a href="parameter_sweep.html" title="previous chapter">Sweeping hyperparameters</a></li>
       <li>Next: <a href="modules.html" title="next chapter">smack_imc</a></li>
   </ul></li>
