@@ -3,6 +3,7 @@ Introduction
 
 ``smack-imc`` is a lightweight package to register images from IF/IMC. It's designed with a specific input type in mind: images of cells with nuclear staining which have been both stained for immunofluorescence (IF), and processed by imaging mass cytometry (IMC).
 
+
 Motivation
 **********
 

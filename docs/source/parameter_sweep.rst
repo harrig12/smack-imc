@@ -1,4 +1,4 @@
-Sweeping hyperparameters
+Sweeping parameters
 ========================
 
 You can use the hyperparameter optimization library of your choice in combination with `smack_imc`. Here, we show a simple set up using [wandb](https://wandb.ai/). 

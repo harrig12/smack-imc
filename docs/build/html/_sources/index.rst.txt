@@ -13,12 +13,5 @@ Welcome to smack-imc's documentation!
    intro
    quickstart
    parameter_sweep
-   smack_imc
    modules
 
-Indices and tables
-==================
-
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`

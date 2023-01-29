@@ -1,4 +1,4 @@
-smack_imc
+Modules
 =========
 
 .. toctree::
