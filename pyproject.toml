@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "smack-imc"
+version = "0.1.0"
+description = ""
+authors = ["harrig12 <charrigan@cs.utoronto.edu>"]
+readme = "README.md"
+packages = [{include = "smack_imc"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
