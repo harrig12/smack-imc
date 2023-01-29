@@ -1,18 +1,22 @@
-[tool.poetry]
-name = "smack-imc"
-version = "0.1.0"
-description = ""
-authors = ["harrig12 <charrigan@cs.utoronto.edu>"]
-readme = "README.md"
-packages = [{include = "smack_imc"}]
-
-[tool.poetry.dependencies]
-python = "^3.11"
-
-
-[tool.poetry.group.dev.dependencies]
-pre-commit = "^3.0.1"
-
 [build-system]
-requires = ["poetry-core"]
-build-backend = "poetry.core.masonry.api"
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "smack-imc"
+version = "0.0.1"
+authors = [
+  { name="Cait Harrigan", email="charrigan@cs.utoronto.ca" },
+]
+description = "IF/IMC image registration"
+readme = "README.md"
+requires-python = ">=3.10"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/pypa/sampleproject"
+"Bug Tracker" = "https://github.com/pypa/sampleproject/issues"

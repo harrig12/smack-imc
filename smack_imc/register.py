@@ -9,13 +9,35 @@ from scipy.stats.mstats import winsorize
 from skimage.io import imread, imsave, imshow
 
 
-def make_gray(channel):
+def make_gray(image):
+    """_summary_
+
+    Args:
+        (numpy array): The image channel to convert to grayscale.
+
+    Returns:
+        (numpy array): The grayscale version of the input image.
+    """
     channel = channel.copy()
     out = channel * (255/channel.max())
     out = out.astype('uint8')
     return out
 
 def preprocess_IMC_nuclear(image, channel_axis=2, arcsinh_normalize=True, arcsinh_cofactor=5, winsorize_limits=[None,0.2], binarization_threshold=2, sigma=1):
+    """_summary_
+
+    Args:
+        image (_type_): _description_
+        channel_axis (int, optional): _description_. Defaults to 2.
+        arcsinh_normalize (bool, optional): _description_. Defaults to True.
+        arcsinh_cofactor (int, optional): _description_. Defaults to 5.
+        winsorize_limits (list, optional): _description_. Defaults to [None,0.2].
+        binarization_threshold (int, optional): _description_. Defaults to 2.
+        sigma (int, optional): _description_. Defaults to 1.
+
+    Returns:
+        _type_: _description_
+    """
     image = image.copy()
     if arcsinh_normalize: 
         image = np.arcsinh(image/arcsinh_cofactor)
